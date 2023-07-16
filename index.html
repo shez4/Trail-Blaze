@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+    <section class="section1">
+      <header class="menu"> 
+        <nav class="navbar">  
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="video.html">Vidoes</a></li>
+            <li><a href="contactus.html">Contact us</a></li>
+          </ul>
+          <img class="logo" src="Imagers/Green Logo.png">
+        </nav>
+      </header>
+    </section>
+  </head>
+
+  <body>
+    <div class="slidershow middle">
+      <div class="slides">
+        <input type="radio" name="r" id="r1" checked />
+        <input type="radio" name="r" id="r2" />
+        <input type="radio" name="r" id="r3" />
+        <input type="radio" name="r" id="r4" />
+        <input type="radio" name="r" id="r5" />
+        <div class="slide s1">
+          <img class="s1" src="Imagers/New Project.png" alt="" />
+        </div>
+        <div class="slide">
+          <img class="s2" src="Imagers/Slide 2.png" alt="" />
+        </div>
+        <div class="slide">
+          <img class="s3" src="Imagers/Slide 3.png" alt="" />
+        </div>
+        <div class="slide">
+          <img class="s4" src="Imagers/slide 4.png" alt="" />
+        </div>
+        </div>
+      </div>
+        <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+      </div>
+      <script>
+        // Automatically change slides every 5 seconds
+        setInterval(function() {
+          var radios = document.getElementsByName('r');
+          var currentSlide = document.querySelector('.slide:checked');
+          var currentIndex = Array.prototype.indexOf.call(radios, currentSlide);
+    
+          // Increment index and loop back to the first slide if needed
+          var nextIndex = (currentIndex + 1) % radios.length;
+          radios[nextIndex].checked = true;
+        }, 5000);
+      </script>
+    </div>
+    <div class="mission">
+      <p>  "Blazing Virtual Hiking Experience best in New Zealand" </p>
+      <p> Let us transport you to the wonders of New Zealand with these unique Virtual Hikes</p>
+    </div>
+    <div class="linkbox">
+    <a href="video.html"><button> EXPERIENCE VIRTUAL HIKING </button></a> </h2>
+    </div>
+    <!-- link for footer social -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <!-- this goes in the head -->
+  
+  
+  
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Home</h4>
+          <ul>
+            <li><a href="index.html"></a></li>
+            <li><a href="index.html"></a></li>
+            <li><a href="index.html"></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About us</h4>
+          <ul>
+            <li><a href="about.html"></a></li>
+            <li><a href="about.html"></a></li>
+            <li><a href="about.html"></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:shanalhr963@gmail.com">TrailBlaze@gmail.com</a></li>
+            <li><a></a></li>
+            
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="social">Social</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/login.php/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram" ></i></a>
+            <a href="https://www.youtube.com/@TrialBlaze"><i class="fab fa-youtube" ></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="rights">Trail Blaze. All rights Reserved</p>
+  </footer>
+  </body>
+</html>
